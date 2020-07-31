@@ -16,7 +16,7 @@
 
 <body>
     <!----NAVBAR---->
-    <div class="container-fluid">
+    <div class="container-fluid navbar-container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">SKATE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,20 +66,31 @@
                 <!--Carousel-->
                 <div id="mainCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mainCarousel" data-slide-to="1"></li>
+                        <li data-target="#mainCarousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="assets/board.jpg" class="d-block w-100" alt="First Slide">
-
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Baby, I'm Board</h5>
+                                <p>Keep on rolling on</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="assets/tipsolahraga.jpg" class="d-block w-100" alt="Second Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Skate for Life</h5>
+                                <p>Show me some tricks</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="assets/longboard.jpg" class="d-block w-100" alt="Third Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Don't Tread on Me</h5>
+                                <p>I long for something else</p>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
@@ -98,7 +109,37 @@
 
 
     </div>
-
+    <!--Second Section with Nested Rows & Columns-->
+    <div class="sectionDark">
+        <div class="row">
+            <div class="col-sm-12 col-md-1 offset-md-2">
+                <img class="img-fluid" src="assets/prodigy.png" alt="Prodigy Skateboard">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim. Egestas erat imperdiet sed euismod. In hac habitasse platea dictumst quisque.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <img class="img-fluid" src="assets/KFS.png" alt="KFS Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ButtonWrapper">
+                    <button type="button" class="btn btn-lg coolStuffBtn">Get Cool Stuff</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript -->

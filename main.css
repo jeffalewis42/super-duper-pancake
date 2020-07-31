@@ -1,5 +1,41 @@
+.navbar-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left-width: 15px;
+    border-left-color: #343a40;
+    border-left-style: solid;
+    border-right-width: 15px;
+    border-right-color: #343a40;
+    border-right-style: solid;
+}
+
 .skate-jumbotron {
     text-align: center;
     background: none;
 }
 
+.carousel-caption {
+    color: chartreuse;
+}
+
+.sectionLight {
+    background-color: #eceeef;
+    padding: 2rem;
+}
+
+.sectionDark {
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.ButtonWrapper {
+    padding: 3rem;
+/*    text-align: center;*/
+}
+
+button.coolStuffBtn {
+    color: #fff;
+    background-color: #D8471E;
+    display: block;
+    margin: auto;
+   }
