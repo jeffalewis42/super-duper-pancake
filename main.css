@@ -30,12 +30,35 @@
 
 .ButtonWrapper {
     padding: 3rem;
-/*    text-align: center;*/
+    /*    text-align: center;*/
 }
+
+
 
 button.coolStuffBtn {
     color: #fff;
     background-color: #D8471E;
     display: block;
     margin: auto;
-   }
+}
+
+.CoolStuffHeader {
+    border-bottom: none;
+}
+
+.CoolStuffBody {
+    border-bottom: none;
+}
+
+.CoolStuffFooter {
+    border-top: none;
+}
+
+.ModalCloseX {
+    position: absolute;
+    right: 1rem;
+}
+
+div.modalFormWrapper {
+    padding: 2rem;
+}

@@ -135,8 +135,57 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="ButtonWrapper">
-                    <button type="button" class="btn btn-lg coolStuffBtn">Get Cool Stuff</button>
+                    <button type="button" class="btn btn-lg coolStuffBtn" data-toggle="modal" data-target="#CoolStuffModal">Get Cool Stuff</button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="CoolStuffModal" tabindex="-1" role="dialog" aria-labelledby="CoolStuffLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header CoolStuffHeader">
+
+                    <h5 class="modal-title w-100 text-center" id="CoolStuffLabel">Get Exclusive Content</h5>
+                    <button type="button" class="close d-none d-sm-block ModalCloseX" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body CoolStuffBody">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <img class="img-fluid" src="assets/KFS_modal.png" alt="KFS Logo">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="modalFormWrapper">
+                                    <form class="CoolStuffForm">
+                                        <div class="form-group">
+                                            <label for="NameInput">What's your name?</label>
+                                            <input type="text" class="form-control" id="NameInput" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="EmailInput">Where should we send your cool content?</label>
+                                            <input type="email" class="form-control" id="EmailInput" placeholder="Email">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer CoolStuffFooter">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
             </div>
         </div>
     </div>
