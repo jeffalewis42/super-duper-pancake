@@ -42,6 +42,29 @@ button.coolStuffBtn {
     margin: auto;
 }
 
+img.imgCenter {
+    display: block;
+    margin: auto;
+}
+.ThumbsCard {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+.ThumbsFooter {
+    padding: 0;
+    padding-top: .5rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+button.ThumbsBtn {
+    color: #fff;
+    background-color: #D8471E;
+    display: block;
+    margin: 0;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
 .CoolStuffHeader {
     border-bottom: none;
 }
