@@ -49,18 +49,25 @@ img.imgCenter {
 .ThumbsCard {
     background-color: rgba(0,0,0,0);
     border: none;
+    
+}
+
+.ThumbsImg {
+    max-width: 315px;
 }
 .ThumbsFooter {
     padding: 0;
     padding-top: .5rem;
     background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 button.ThumbsBtn {
     color: #fff;
     background-color: #D8471E;
     display: block;
-    margin: 0;
+    margin: auto;
     width: 100%;
+    max-width: 315px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
