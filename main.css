@@ -46,21 +46,24 @@ img.imgCenter {
     display: block;
     margin: auto;
 }
+
 .ThumbsCard {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
-    
+
 }
 
 .ThumbsImg {
     max-width: 315px;
 }
+
 .ThumbsFooter {
     padding: 0;
     padding-top: .5rem;
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
+
 button.ThumbsBtn {
     color: #fff;
     background-color: #D8471E;
@@ -72,6 +75,28 @@ button.ThumbsBtn {
     margin-bottom: 20px;
 }
 
+.footerImg {
+    padding: 15px;
+}
+
+.fab {
+    margin: 10px;
+}
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-google-plus-square {
+    color: #c32f10;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.social-wrapper {
+    margin: auto;
+}
 .CoolStuffHeader {
     border-bottom: none;
 }

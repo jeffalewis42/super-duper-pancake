@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/b976700e11.js" crossorigin="anonymous"></script>
     <!--    --Custom CSS---->
     <link rel="stylesheet" href="main.css">
     <title></title>
@@ -148,45 +150,56 @@
                 <div class="card-deck">
                     <div class="card ThumbsCard">
                         <img src="assets/kickflip.jpg" class="card-img-top ThumbsImg imgCenter" alt="kickflip">
-                        <!--
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
--->
+
                         <div class="card-footer ThumbsFooter">
-                            <button type="button" class="btn btn-lg ThumbsBtn" data-toggle="modal" data-target="#LargeKSModal">Kickflip</button>
+                            <button type="button" class="btn btn-lg ThumbsBtn" id="kf" data-toggle="modal" data-target="#LargeVidModalKF" data-whatever="0">Kickflip</button>
                         </div>
                     </div>
                     <div class="card ThumbsCard">
                         <img src="assets/360flip.jpg" class="card-img-top ThumbsImg imgCenter" alt="360 flip">
-                        <!--
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
--->
+
+
                         <div class="card-footer ThumbsFooter">
-                            <button type="button" class="btn btn-lg ThumbsBtn" data-toggle="modal" data-target="#Large360Modal">360 Flip</button>
+                            <button type="button" class="btn btn-lg ThumbsBtn" id="360f" data-toggle="modal" data-target="#LargeVidModal360" data-whatever="1">360 Flip</button>
                         </div>
                     </div>
                     <div class="card ThumbsCard">
                         <img src="assets/bscrook.jpg" class="card-img-top ThumbsImg imgCenter" alt="BS Crook">
-                        <!--
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
--->
+
                         <div class="card-footer ThumbsFooter">
-                            <button type="button" class="btn btn-lg ThumbsBtn" data-toggle="modal" data-target="#LargeBSModal">BS Crook</button>
+                            <button type="button" class="btn btn-lg ThumbsBtn" id="bs" data-toggle="modal" data-target="#LargeVidModalBS" data-whatever="2">BS Crook</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Modal -->
+
+
+
+    <!--Footer-->
+    <footer class="footer bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <img class="img-fluid footerImg" src="assets/KFS_LIGHT.png" alt="KFS Logo">
+                </div>
+                <div class="col-sm-12 col-lg-9 social-wrapper">
+                    <a href="https://facebook.com">
+                        <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://plus.google.com">
+                        <i class="fab fa-google-plus-square fa-3x"></i>
+                    </a>
+                    <a href="https://instagram.com">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Cool Stuff Modal -->
     <div class="modal fade" id="CoolStuffModal" tabindex="-1" role="dialog" aria-labelledby="CoolStuffLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -235,12 +248,66 @@
         </div>
     </div>
 
+    <!--VideoModals-->
+    <div class="modal fade" id="LargeVidModalKF" tabindex="-1" role="dialog" aria-labelledby="VidModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" id="VidIFrame" src="https://www.youtube.com/embed/ilzy0viqVes?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <p id="VidCaption">Kickflips are easy. Pop, flick, catch, land. #Boom</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-    <!-- Optional JavaScript -->
-    <script src="javas.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="LargeVidModal360" tabindex="-1" role="dialog" aria-labelledby="VidModalLabel360" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" id="VidIFrame" src="https://www.youtube.com/embed/lKfACXgbIkA?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <p id="VidCaption">K360 Flips are easy too</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="LargeVidModalBS" tabindex="-1" role="dialog" aria-labelledby="VidModalLabelBS" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" id="VidIFrame" src="https://www.youtube.com/embed/NpG8NYVePCE?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <p id="VidCaption">Backside Crooks are sick!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <script src="javas.js"></script>
+
+
 
 </body></html>
